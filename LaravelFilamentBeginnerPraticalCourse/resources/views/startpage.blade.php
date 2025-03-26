@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>EstateAgency Bootstrap Template - About</title>
+  <title>Real Invest</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -137,7 +137,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html">Estate<span class="color-b">Agency</span></a>
+      <a class="navbar-brand text-brand" href="index.html">Real <span class="color-b">Invest</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -216,7 +216,7 @@
               <img src="assets/img/slide-about-1.jpg" alt="" class="img-fluid">
             </div>
             <div class="sinse-box">
-              <h3 class="sinse-title">EstateAgency
+              <h3 class="sinse-title">Real Invest
                 <span></span>
                 <br> Sinse 2017
               </h3>
@@ -230,7 +230,7 @@
               </div>
               <div class="col-lg-2  d-none d-lg-block position-relative">
                 <div class="title-vertical d-flex justify-content-start">
-                  <span>EstateAgency Exclusive Property</span>
+                  <span>Real Invest Exclusive Property</span>
                 </div>
               </div>
               <div class="col-md-6 col-lg-5 section-md-t3">
@@ -464,7 +464,7 @@
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">EstateAgency</h3>
+              <h3 class="w-title-a text-brand">Real Invest</h3>
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
@@ -479,6 +479,12 @@
                 </li>
                 <li class="color-a">
                   <span class="color-text-a">Email .</span> +54 356 945234
+                </li>
+                <li class="color-a">
+                  <span class="color-text-a">City .</span> {{ config('company.address.city') }}
+                </li>
+                <li class="color-a">
+                  <span class="color-text-a">Street .</span> {{ config('company.address.street') }}
                 </li>
               </ul>
             </div>
@@ -597,7 +603,7 @@
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy; Copyright
-              <span class="color-a">EstateAgency</span> All Rights Reserved.
+              <span class="color-a">Real Invest Agency</span> All Rights Reserved.
             </p>
           </div>
           <div class="credits">

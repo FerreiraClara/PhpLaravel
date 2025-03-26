@@ -59,6 +59,8 @@ class AdminPanelProvider extends PanelProvider
             ->sidebarCollapsibleOnDesktop(true)    //Menu lateral encolhe
             // ->sidebarWidth('full');
 
+            ->brandName(config('company.name'))
+
             ->favicon(asset('/real-invest-favicon.png'));
             
     }
