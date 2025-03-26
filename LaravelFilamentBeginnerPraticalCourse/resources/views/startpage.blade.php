@@ -221,7 +221,7 @@
                 <span></span>
                 <br> Sinse 2017
               </h3>
-              <p>Art & Creative</p>
+              <p class="font-color-white">Art & Creative</p>
             </div>
           </div>
           <div class="col-md-12 section-t8 position-relative">
@@ -289,7 +289,7 @@
                   </div>
                 </div>
                 <div class="card-body-d">
-                  <p class="content-d color-text-a">
+                  <p class="content-d color-text-a font-color-white">
                     Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
                   </p>
                   <div class="info-agents color-a">
@@ -345,7 +345,7 @@
                   </div>
                 </div>
                 <div class="card-body-d">
-                  <p class="content-d color-text-a">
+                  <p class="content-d color-text-a font-color-white">
                     Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
                   </p>
                   <div class="info-agents color-a">
@@ -406,7 +406,7 @@
                   </div>
                 </div>
                 <div class="card-body-d">
-                  <p class="content-d color-text-a">
+                  <p class="content-d color-text-a font-color-white">
                     Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
                   </p>
                   <div class="info-agents color-a">
