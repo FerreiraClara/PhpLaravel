@@ -56,8 +56,10 @@ class AdminPanelProvider extends PanelProvider
             ->defaultThemeMode(ThemeMode::Dark)
             // como é o usuário que escolhe o tema, ele ficara salvo no localStorage, mesmo que eu defina um "padrão"
 
-            ->sidebarCollapsibleOnDesktop(true);    //Menu lateral encolhe
+            ->sidebarCollapsibleOnDesktop(true)    //Menu lateral encolhe
             // ->sidebarWidth('full');
+
+            ->favicon(asset('/real-invest-favicon.png'));
             
     }
 }

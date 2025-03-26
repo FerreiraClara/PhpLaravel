@@ -86,4 +86,6 @@ return [
 
     'livewire_loading_delay' => 'default',
 
+    // Não funcionou
+    // 'favicon' => '/real-invest-favicon.png',
 ];
