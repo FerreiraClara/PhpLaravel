@@ -475,10 +475,10 @@
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com
+                  <span class="color-text-a">Phone .</span> {{ config('company.phone') }}
                 </li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234
+                  <span class="color-text-a">Email .</span> {{ config('company.email') }}
                 </li>
                 <li class="color-a">
                   <span class="color-text-a">City .</span> {{ config('company.address.city') }}
