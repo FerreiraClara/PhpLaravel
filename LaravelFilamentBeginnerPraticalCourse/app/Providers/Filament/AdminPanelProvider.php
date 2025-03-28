@@ -19,6 +19,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Filament\Pages\CustomDashboard;
+use Filament\FontProviders\GoogleFontProvider;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -28,8 +29,17 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->colors([
-                'primary' => Color::Pink,
+                // https://tailwindcss.com/docs/colors
+                'danger' => Color::Rose,
+                'gray' => Color::Zinc,          // fundo
+                'info' => Color::Blue,
+                'primary' => Color::Blue,     // cor da escolha selecionada
+                'success' => Color::Emerald,
+                'warning' => Color::Orange,
             ])
+            ->font('Poppins')
+            // ->font('Inter', provider: GoogleFontProvider::class)
+
             ->discoverResources(in: app_path('Filament/Admin/Resources'), for: 'App\\Filament\\Admin\\Resources')
             ->discoverPages(in: app_path('Filament/Admin/Pages'), for: 'App\\Filament\\Admin\\Pages')
             ->pages([
@@ -54,13 +64,21 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
+
+            // Sobre o tema
+            // Naturalmente, o usuário tem opção de escolha no próprio dashboard de tema claro/escuro
+            // darkMode(false) => desativa a opção darkmode e o usuário não tem mais opção de escolha (disponível apenas o lightmode)
+            ->darkMode(true)
             ->defaultThemeMode(ThemeMode::Dark)
-            // como é o usuário que escolhe o tema, ele ficara salvo no localStorage, mesmo que eu defina um "padrão"
+
 
             ->sidebarCollapsibleOnDesktop(true)    //Menu lateral encolhe
             // ->sidebarWidth('full');
 
             ->brandName(config('company.name'))
+
+            // ->brandLogo(fn () => ('\real-invest-logo.png'))
+            // ->brandLogoHeight('2rem')
 
             ->favicon(asset('/real-invest-favicon.png'));
             

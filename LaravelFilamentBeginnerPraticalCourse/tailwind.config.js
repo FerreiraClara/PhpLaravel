@@ -10,14 +10,23 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
-
+        
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+
+            colors: {
+              fuchsia: '#D946EF', // Defina a cor personalizada
+            },
+          },
         },
-    },
+        variants: {
+          extend: {
+            backgroundColor: ['dark'], // Habilita o background-color no modo escuro
+          },
+        },
 
     plugins: [forms, typography],
 };
