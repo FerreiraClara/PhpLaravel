@@ -70,14 +70,20 @@ class PropertyResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title')
-                    ->searchable(),
+                    ->searchable()
+                    ->limit(12)
+                    ->sortable(),
+
                 Tables\Columns\TextColumn::make('country')
+                    ->limit(12)
+                    ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('city')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('address')
+                    ->limit(12)
+                    ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('price')
+                    ->limit(12)
                     ->money()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('sqm')
@@ -92,28 +98,7 @@ class PropertyResource extends Resource
                 Tables\Columns\TextColumn::make('garages')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\IconColumn::make('slider')
-                    ->boolean(),
-                Tables\Columns\IconColumn::make('visible')
-                    ->boolean(),
-                Tables\Columns\TextColumn::make('start_date')
-                    ->date()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('end_date')
-                    ->date()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('deleted_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+
             ])
             ->filters([
                 Tables\Filters\TrashedFilter::make(),
