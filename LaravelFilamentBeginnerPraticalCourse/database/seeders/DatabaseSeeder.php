@@ -20,5 +20,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'clara@laravel-php.com',
             'password' => bcrypt('AbC123**'),
         ]);
+
+        \App\Models\Property::factory(50)->create();
+
     }
 }
