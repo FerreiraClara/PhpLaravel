@@ -8,4 +8,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api/series', [\App\Http\Controllers\Api\SeriesController::class, 'index']);
+Route::get('/api/series', [SeriesController::class, 'index']);
