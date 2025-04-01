@@ -16,6 +16,10 @@ class SeriesController extends Controller
     public function store(SeriesFormRequest $request)
     {
         // verificando se os dados estão sendo recebidos com sucesso
-        dd($request->all());
+        $serie = Serie::create($request->all());
+
+        //informando ao usuário que foi criado e retornando-a
+        return response() 
+            ->json($serie, 201);
     }
 }

@@ -11,7 +11,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/api/series', [SeriesController::class, 'index']);
 
-Route::get('/api/series', function (){
-    return \App\Models\Serie::all();
-});
+Route::post('/api/seriespost', [SeriesController::class, 'store']);
