@@ -8,4 +8,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api/series', [SeriesController::class, 'index']);
+// Route::get('/api/series', function (){
+//     $events = \App\Models\Serie::all();  
+
+//     return $events;
+// });
+
+
+require __DIR__ . '/api.php';
