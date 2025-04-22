@@ -138,7 +138,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html">Estate<span class="color-b">Agency</span></a>
+      <a class="navbar-brand text-brand" href="/">Estate<span class="color-b">Agency</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -197,7 +197,7 @@
             <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
                   News Grid
@@ -225,7 +225,7 @@
                   </div>
                   <div class="card-title-b">
                     <h2 class="title-2">
-                      <a href="blog-single.html">Travel is comming
+                      <a href="blog-single">Travel is comming
                         <br> new</a>
                     </h2>
                   </div>
@@ -244,11 +244,11 @@
               <div class="card-overlay">
                 <div class="card-header-b">
                   <div class="card-category-b">
-                    <a href="blog-single.html" class="category-b">Travel</a>
+                    <a href="blog-single" class="category-b">Travel</a>
                   </div>
                   <div class="card-title-b">
                     <h2 class="title-2">
-                      <a href="blog-single.html">Travel is comming
+                      <a href="blog-single">Travel is comming
                         <br> new</a>
                     </h2>
                   </div>
@@ -271,7 +271,7 @@
                   </div>
                   <div class="card-title-b">
                     <h2 class="title-2">
-                      <a href="blog-single.html">Travel is comming
+                      <a href="blog-single">Travel is comming
                         <br> new</a>
                     </h2>
                   </div>
@@ -294,7 +294,7 @@
                   </div>
                   <div class="card-title-b">
                     <h2 class="title-2">
-                      <a href="blog-single.html">Travel is comming
+                      <a href="blog-single">Travel is comming
                         <br> new</a>
                     </h2>
                   </div>
@@ -317,7 +317,7 @@
                   </div>
                   <div class="card-title-b">
                     <h2 class="title-2">
-                      <a href="blog-single.html">Travel is comming
+                      <a href="blog-single">Travel is comming
                         <br> new</a>
                     </h2>
                   </div>
@@ -340,7 +340,7 @@
                   </div>
                   <div class="card-title-b">
                     <h2 class="title-2">
-                      <a href="blog-single.html">Travel is comming
+                      <a href="blog-single">Travel is comming
                         <br> new</a>
                     </h2>
                   </div>
@@ -481,7 +481,7 @@
           <nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li class="list-inline-item">
                 <a href="#">About</a>

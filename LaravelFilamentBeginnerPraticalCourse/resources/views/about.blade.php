@@ -137,7 +137,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html">Real <span class="color-b">Invest</span></a>
+      <a class="navbar-brand text-brand" href="/">Real <span class="color-b">Invest</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -195,7 +195,7 @@
             <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
                   About
@@ -282,7 +282,7 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Margaret Sotillo
+                      <a href="agent-single" class="link-two">Margaret Sotillo
                         <br> Escala</a>
                     </h3>
                   </div>
@@ -338,7 +338,7 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Stiven Spilver
+                      <a href="agent-single" class="link-two">Stiven Spilver
                         <br> Darw</a>
                     </h3>
                   </div>
@@ -399,7 +399,7 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Emma Toledo
+                      <a href="agent-single" class="link-two">Emma Toledo
                         <br> Cascada</a>
                     </h3>
                   </div>
@@ -560,7 +560,7 @@
           <nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li class="list-inline-item">
                 <a href="#">About</a>

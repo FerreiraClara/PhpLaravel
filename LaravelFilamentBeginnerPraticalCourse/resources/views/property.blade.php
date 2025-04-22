@@ -138,7 +138,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html">Estate<span class="color-b">Agency</span></a>
+      <a class="navbar-brand text-brand" href="/">Estate<span class="color-b">Agency</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -197,7 +197,7 @@
             <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
                   Properties Grid
@@ -242,7 +242,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click here to view
+                    <a href="property-single" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -289,7 +289,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click here to view
+                    <a href="property-single" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -336,7 +336,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click here to view
+                    <a href="property-single" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -383,7 +383,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click here to view
+                    <a href="property-single" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -430,7 +430,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click here to view
+                    <a href="property-single" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -477,7 +477,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click here to view
+                    <a href="property-single" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -637,7 +637,7 @@
           <nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li class="list-inline-item">
                 <a href="#">About</a>

@@ -138,7 +138,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html">Estate<span class="color-b">Agency</span></a>
+      <a class="navbar-brand text-brand" href="/">Estate<span class="color-b">Agency</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -366,7 +366,7 @@
                 <h2 class="title-a">Latest Properties</h2>
               </div>
               <div class="title-link">
-                <a href="property-grid.html">All Property
+                <a href="property">All Property
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -386,7 +386,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">206 Mount
+                        <a href="property-single">206 Mount
                           <br /> Olive Road Two</a>
                       </h2>
                     </div>
@@ -434,7 +434,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">157 West
+                        <a href="property-single">157 West
                           <br /> Central Park</a>
                       </h2>
                     </div>
@@ -442,7 +442,7 @@
                       <div class="price-box d-flex">
                         <span class="price-a">rent | $ 12.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Click here to view
+                      <a href="property-single" class="link-a">Click here to view
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -482,7 +482,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">245 Azabu
+                        <a href="property-single">245 Azabu
                           <br /> Nishi Park let</a>
                       </h2>
                     </div>
@@ -490,7 +490,7 @@
                       <div class="price-box d-flex">
                         <span class="price-a">rent | $ 12.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Click here to view
+                      <a href="property-single" class="link-a">Click here to view
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -530,7 +530,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">204 Montal
+                        <a href="property-single">204 Montal
                           <br /> South Bela Two</a>
                       </h2>
                     </div>
@@ -538,7 +538,7 @@
                       <div class="price-box d-flex">
                         <span class="price-a">rent | $ 12.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Click here to view
+                      <a href="property-single" class="link-a">Click here to view
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -585,7 +585,7 @@
                 <h2 class="title-a">Best Agents</h2>
               </div>
               <div class="title-link">
-                <a href="agents-grid.html">All Agents
+                <a href="agents-grid">All Agents
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -602,7 +602,7 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Margaret Sotillo
+                      <a href="agent-single" class="link-two">Margaret Sotillo
                         <br> Escala</a>
                     </h3>
                   </div>
@@ -658,7 +658,7 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Stiven Spilver
+                      <a href="agent-single" class="link-two">Stiven Spilver
                         <br> Darw</a>
                     </h3>
                   </div>
@@ -714,7 +714,7 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Emma Toledo
+                      <a href="agent-single" class="link-two">Emma Toledo
                         <br> Cascada</a>
                     </h3>
                   </div>
@@ -775,7 +775,7 @@
                 <h2 class="title-a">Latest News</h2>
               </div>
               <div class="title-link">
-                <a href="blog-grid.html">All News
+                <a href="blog">All News
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -798,7 +798,7 @@
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="blog-single.html">House is comming
+                        <a href="blog-single">House is comming
                           <br> new</a>
                       </h2>
                     </div>
@@ -822,7 +822,7 @@
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="blog-single.html">Travel is comming
+                        <a href="blog-single">Travel is comming
                           <br> new</a>
                       </h2>
                     </div>
@@ -846,7 +846,7 @@
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="blog-single.html">Park is comming
+                        <a href="blog-single">Park is comming
                           <br> new</a>
                       </h2>
                     </div>
@@ -1067,7 +1067,7 @@
           <nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li class="list-inline-item">
                 <a href="#">About</a>
