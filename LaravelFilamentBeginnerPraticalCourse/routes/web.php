@@ -3,39 +3,39 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    return view('layouts.componentes-pages.home');
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('layouts.componentes-pages.about');
 });
 
 Route::get('/property', function () {
-    return view('property');
+    return view('layouts.componentes-pages.property');
 });
 
 Route::get('/blog', function () {
-    return view('blog');
+    return view('layouts.componentes-pages.blog');
 });
 
 Route::get('/agents-grid', function () {
-    return view('agents-grid');
+    return view('layouts.componentes-pages.agents-grid');
 });
 
 Route::get('/agent-single', function () {
-    return view('agent-single');
+    return view('layouts.componentes-pages.agent-single');
 });
 
 Route::get('/blog-single', function () {
-    return view('blog-single');
+    return view('layouts.componentes-pages.blog-single');
 });
 
 Route::get('/property-single', function () {
-    return view('property-single');
+    return view('layouts.componentes-pages.property-single');
 });
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('layouts.componentes-pages.contact');
 });
 
 Route::middleware([
