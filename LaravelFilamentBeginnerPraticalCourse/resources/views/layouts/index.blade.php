@@ -26,46 +26,42 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: EstateAgency - v4.7.0
-  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
+    <!-- ======= Property Search Section ======= -->
     @section('Property-Search-Section')
         @include('layouts._includes.property-search')
     @show
+    <!-- End Property Search Section -->
 
-  <!-- ======= Header/Navbar ======= -->
-   @section('navbar')
+    <!-- ======= Header/Navbar ======= -->
+    @section('navbar')
         @include('layouts._includes.navbar')
-   @show
-  <!-- End Header/Navbar -->
+    @show
+    <!-- End Header/Navbar -->
 
-  <main id="main">
+    <main id="main">
         @yield('conteudo')
-  </main>
+    </main>
 
-  <!-- ======= Footer ======= -->
-   @section('footer')
+    <!-- ======= Footer ======= -->
+    @section('footer')
         @include('layouts._includes.footer')
-   @show
-  <!-- End  Footer -->
+    @show
+    <!-- End  Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
