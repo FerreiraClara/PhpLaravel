@@ -7,5 +7,3 @@ use App\Models\Serie;
 Route::get('/', function () {
     return view('welcome');
 });
-
-require __DIR__ . '/api.php';

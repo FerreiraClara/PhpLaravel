@@ -21,9 +21,12 @@ class SeriesController extends Controller
 
         $series = Serie::all();
         $mensagemSucesso = session('mensagem.sucesso');
+        $errors = session('mensagem.danger');
 
         return view('series.index')->with('series', $series)
-            ->with('mensagemSucesso', $mensagemSucesso);
+            ->with('mensagemSucesso', $mensagemSucesso)
+            ->with('mensagem.danger', $errors
+        );
     }
 
 
