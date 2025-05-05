@@ -18,6 +18,7 @@ class SeriesController extends Controller
 
     public function index()
     {
+
         $series = Serie::all();
         $mensagemSucesso = session('mensagem.sucesso');
 

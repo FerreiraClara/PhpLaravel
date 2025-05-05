@@ -10,4 +10,8 @@ class Serie extends Model
     use HasFactory;
  
      protected $guardad = ['id'];
+
+     protected $fillable = [
+        'nome',
+     ];
 }

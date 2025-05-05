@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ route('series.index') }}">Home</a>
+        <a class="navbar-brand" href="#">Home</a>
 
         @auth
         <form action="{{ route('logout') }}" method="post">
@@ -24,7 +24,7 @@
         @endauth
 
         @guest
-        <a href="{{ route('login') }}">Entrar</a>
+        <a href="#">Entrar</a>
         @endguest
     </div>
 </nav>
