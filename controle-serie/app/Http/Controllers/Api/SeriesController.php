@@ -36,9 +36,8 @@ class SeriesController extends Controller
             ->json($this->seriesRepository->add($request), 201);
     }
 
-    public function show(Serie $series){
-        //poderia usar o find também
-        // return Serie::where('id', $id)->get() . Season::where('series_id', $id)->get();
+    public function show($series){
+        $series = Serie::where('id', $series)->with('seasons.episodes')->get();
         return $series;
         
     }

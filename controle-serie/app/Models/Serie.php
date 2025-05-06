@@ -14,4 +14,14 @@ class Serie extends Model
      protected $fillable = [
         'nome',
      ];
+
+     public function seasons()
+    {
+        return $this->hasMany(Season::class, 'series_id');
+    }
+
+    public function episodes()
+    {
+        return $this->hasManyThrough(Episode::class, Season::class);
+    }
 }

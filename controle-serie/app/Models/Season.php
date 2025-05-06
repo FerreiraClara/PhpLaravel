@@ -10,4 +10,9 @@ class Season extends Model
     use HasFactory;
  
     protected $guardad = ['id'];
+
+    public function episodes()
+    {
+        return $this->hasMany(Episode::class);
+    }
 }
