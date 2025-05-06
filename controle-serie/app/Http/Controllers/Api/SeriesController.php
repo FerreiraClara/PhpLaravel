@@ -50,4 +50,14 @@ class SeriesController extends Controller
 
         return $series;
     }
+
+    public function destroy($serieId)
+    {
+        Serie::destroy($serieId);
+
+        // return response('', 204); é a mesma coisa que response()->noContent();
+        return response()->noContent();
+    }
+
+    // Para o destroy, no postman, preciso definir no Headers a key == Accept e value == application/json
 }
