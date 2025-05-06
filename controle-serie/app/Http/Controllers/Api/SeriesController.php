@@ -36,9 +36,18 @@ class SeriesController extends Controller
             ->json($this->seriesRepository->add($request), 201);
     }
 
-    public function show($series){
-        $series = Serie::where('id', $series)->with('seasons.episodes')->get();
+    public function show($seriesId){
+        $series = Serie::where('id', $seriesId)->with('seasons.episodes')->get();
         return $series;
         
+    }
+
+    // o método update espera receber o id da serie na url e espera o corpo da requisicao
+    public function update(SeriesFormRequest $request, Serie $series){
+        // fill preenche um modelo existente com os dados da requisição
+        $series->fill($request->all());
+        $series->save();
+
+        return $series;
     }
 }
