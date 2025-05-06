@@ -37,13 +37,12 @@ class SeriesController extends Controller
     }
 
     public function show($seriesId){
-        $series = Serie::find($seriesId);
+        $series = Serie::with('seasons.episodes')->find($seriesId);
         
         if ($series === null) {
             return response()->json(['message' => 'Serie nao encontrada'], 404);
         }
-        
-        $series = Serie::where('id', $seriesId)->with('seasons.episodes')->get();
+
         return $series;
         
     }
