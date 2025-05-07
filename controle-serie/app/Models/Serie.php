@@ -4,11 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+// use App\Models\Season;
+// use App\Models\Episode;
 
 class Serie extends Model
 {
     use HasFactory;
- 
+    
      protected $guardad = ['id'];
 
      protected $fillable = [
@@ -20,8 +23,10 @@ class Serie extends Model
         return $this->hasMany(Season::class, 'series_id');
     }
 
-    public function episodes()
+    public function episodes(): HasManyThrough
     {
-        return $this->hasManyThrough(Episode::class, Season::class);
+        // tem muitos "episodios" atraves de (vai ver todos os episodios, de todas as temporadas )
+        // return $this->hasManyThrough(Episode::class, Season::class);                             // não funcionou
+        return $this->through('seasons')->has('episodes');
     }
 }

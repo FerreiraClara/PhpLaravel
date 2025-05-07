@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\SeriesController;
 use App\Http\Controllers\Api\TemporadasController;
+use App\Http\Controllers\Api\EpisodiosController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -16,3 +17,5 @@ Route::apiResource('/series', SeriesController::class);
 // Route::get('/series/{id}', [SeriesController::class, 'showId']);
 
 Route::get('/series/{series}/season', [TemporadasController::class, 'index']);
+
+Route::get('/series/{series}/episodes', [EpisodiosController::class, 'index']);
