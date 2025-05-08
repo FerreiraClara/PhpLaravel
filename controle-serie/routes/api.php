@@ -19,3 +19,5 @@ Route::apiResource('/series', SeriesController::class);
 Route::get('/series/{series}/season', [TemporadasController::class, 'index']);
 
 Route::get('/series/{series}/episodes', [EpisodiosController::class, 'index']);
+
+Route::patch('/episodes/{episode}', [EpisodiosController::class, 'assistido']);
