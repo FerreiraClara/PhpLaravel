@@ -31,7 +31,7 @@ class SeriesController extends Controller
         
         //paginate(perPage: int, columns: array, pageName: string = 'page', page: int)
         return $query->paginate(5);
-        
+
         // $mensagemSucesso = session('mensagem.sucesso');
         // return view('series.index')->with('series', $series)
         //     ->with('mensagemSucesso', $mensagemSucesso);
