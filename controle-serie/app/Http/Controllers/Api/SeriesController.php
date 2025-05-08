@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\Models\Serie;
 use App\Models\Season;
 use App\Http\Requests\SeriesFormRequest;
@@ -16,12 +17,23 @@ class SeriesController extends Controller
 
     }
 
-    public function index()
+    public function index(Request $request)
     {
 
+        //verificando se foi passado uma chave nome
+        if ($request->has('nome'))
+        {
+            $series = Serie::where('nome', $request->nome)->get();
+            
+            if ($series->all() != [])
+            {
+                return $series;
+            }
+
+        }
+        
         $series = Serie::all();
         $mensagemSucesso = session('mensagem.sucesso');
-
         return view('series.index')->with('series', $series)
             ->with('mensagemSucesso', $mensagemSucesso);
     }
