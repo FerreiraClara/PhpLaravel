@@ -20,22 +20,21 @@ class SeriesController extends Controller
     public function index(Request $request)
     {
 
+        $query = Serie::query();
+
         //verificando se foi passado uma chave nome
         if ($request->has('nome'))
         {
-            $series = Serie::where('nome', $request->nome)->get();
-            
-            if ($series->all() != [])
-            {
-                return $series;
-            }
+            $query->where('nome', $request->nome)->get();
 
         }
         
-        $series = Serie::all();
-        $mensagemSucesso = session('mensagem.sucesso');
-        return view('series.index')->with('series', $series)
-            ->with('mensagemSucesso', $mensagemSucesso);
+        //paginate(perPage: int, columns: array, pageName: string = 'page', page: int)
+        return $query->paginate(5);
+        
+        // $mensagemSucesso = session('mensagem.sucesso');
+        // return view('series.index')->with('series', $series)
+        //     ->with('mensagemSucesso', $mensagemSucesso);
     }
 
 
