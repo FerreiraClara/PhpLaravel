@@ -14,6 +14,7 @@ class Episode extends Model
 
     protected $fillable = ['number'];
 
+    //declarando como falso porque não foi configurado no banco, diferente das series e episodios
     public $timestamps = false;
 
     protected $casts = [
