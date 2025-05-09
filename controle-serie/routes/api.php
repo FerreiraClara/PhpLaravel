@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\SeriesController;
 use App\Http\Controllers\Api\TemporadasController;
 use App\Http\Controllers\Api\EpisodiosController;
+use App\Http\Controllers\Api\AutenticacaoController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -21,3 +22,5 @@ Route::get('/series/{series}/season', [TemporadasController::class, 'index']);
 Route::get('/series/{series}/episodes', [EpisodiosController::class, 'index']);
 
 Route::patch('/episodes/{episode}', [EpisodiosController::class, 'assistido']);
+
+Route::post('/login', [AutenticacaoController::class, 'index']);
