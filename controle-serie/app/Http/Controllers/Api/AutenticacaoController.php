@@ -22,12 +22,11 @@ class AutenticacaoController extends Controller
         }
         //pegando os dados do usuario
         $user = Auth::user();
-        dd($user);
-        return response()->json('Sucesso', 200);
 
+        //createToken('dar_um_nome_para_o_token')
+        $token = $user->createToken('token');
 
-        //Inicialmente irá salvar na sessão, mas isso não é um problema porque esse sessão será ignorada
-        //Esta sendo utilizado o Facade que salva em sessão, mas essa sessão não é utilizada em outra requisição
+        return response()->json($token->plainTextToken . ' Sucesso', 200);
         
     }
 
