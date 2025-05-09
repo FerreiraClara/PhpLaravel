@@ -12,15 +12,16 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::apiResource('/series', SeriesController::class);
-// Route::get('/series', [SeriesController::class, 'index']);
-// Route::post('/series', [SeriesController::class, 'store']);
-// Route::get('/series/{id}', [SeriesController::class, 'showId']);
+//o middleware auth:sanctum já pega o token do usuário, encontra o usuario a partir do token e consegue acessar as outras urls
+Route::middleware('auth:sanctum')->group(function() {
+    
+    Route::apiResource('/series', SeriesController::class);
 
-Route::get('/series/{series}/season', [TemporadasController::class, 'index']);
-
-Route::get('/series/{series}/episodes', [EpisodiosController::class, 'index']);
-
-Route::patch('/episodes/{episode}', [EpisodiosController::class, 'assistido']);
+    Route::get('/series/{series}/season', [TemporadasController::class, 'index']);
+    
+    Route::get('/series/{series}/episodes', [EpisodiosController::class, 'index']);
+    
+    Route::patch('/episodes/{episode}', [EpisodiosController::class, 'assistido']);
+});
 
 Route::post('/login', [AutenticacaoController::class, 'index']);
