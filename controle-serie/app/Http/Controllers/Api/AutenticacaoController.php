@@ -25,18 +25,9 @@ class AutenticacaoController extends Controller
 
         //remove todos os tokens que o usuario possa ter, antes de criar um novo, para caso alguma autorizacao seja tirada/adicionada
         $user->tokens()->delete();
-
-        
-        //$user->nivelAcesso == 'admin', por exemplo
-        if ($user->admin)
-        {
-            // se caso o usuario for admin, posso adicionar uma habilidade a mais no token, no caso, deletar / array de habilidades
-            // nao precisa ser 'series:deletar', mas é bom manter um padrao de 'recurso:operacao'
-            $token = $user->createToken('token', ['is_admin']);
-        };
         
         //createToken('dar_um_nome_para_o_token')
-        // $token = $user->createToken('token');
+        $token = $user->createToken('token');
 
         return response()->json($token->plainTextToken . ' Sucesso', 200);
         
