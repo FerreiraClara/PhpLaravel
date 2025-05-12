@@ -8,7 +8,7 @@ use App\Models\Serie;
 use App\Models\Season;
 use App\Http\Requests\SeriesFormRequest;
 use App\Repositories\SeriesRepository;
-// use App\Repositories\EloquentSeriesRepository;
+use Illuminate\Contracts\Auth\Authenticatable;
 
 class SeriesController extends Controller
 {
@@ -67,8 +67,13 @@ class SeriesController extends Controller
         return $series;
     }
 
-    public function destroy($serieId)
+    public function destroy($serieId, Authenticatable $user)
     {
+        // dd($request->user());
+
+
+        dd($user->tokenCan('is_admin'));
+
         Serie::destroy($serieId);
 
         // return response('', 204); é a mesma coisa que response()->noContent();
